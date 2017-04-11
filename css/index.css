@@ -1,0 +1,558 @@
+/*
+* @Author: gj
+* @Date:   2017-03-31 17:02:50
+* @Last Modified by:   yuxiaoxian
+* @Last Modified time: 2017-04-05 16:05:34
+*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-appearance: none;
+	-webkit-text-size-adjust:100%;
+	-webkit-user-select:none;
+	-webkit-overflow-scrolling:touch;
+	-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);
+	-webkit-user-select:none;user-select:none;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	-webkit-text-size-adjust: 100%;
+  	text-size-adjust: 100%;
+}
+body{
+	background: #f0f0f0;
+	font-family:Helvetica;
+	-webkit-overflow-scrolling:touch; overflow-scrolling: touch;
+}
+p{
+	max-height:9999999px;
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+/* span{
+	font-size: 12px;
+}
+a{
+	font-size: 12px;
+} */
+
+.head{
+	width: 100%;
+	background:-webkit-linear-gradient(top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	padding:5px 0;
+	box-sizing: border-box;
+	position:fixed;
+	z-index: 1;
+	
+}
+.head input{
+	width: 60%;
+	height:33px;
+	outline:none;
+	border: 0;
+	border-radius: 3px 3px;
+	background: rgba(255,255, 255,0.8);
+	color: #958C93;
+	font-size: 14px;
+	padding-left:15px;
+	position: relative;
+}
+.head .fangdajing{
+	position: absolute;
+	left: 70%;
+	top: 0px;
+}
+.head .a1{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	float: right;
+	padding-right: 4%;
+	box-sizing: border-box;
+	margin-top: 2.5%;
+}
+.head .daohang{
+	display: block;
+	font-size:34px;
+	color:#fff;
+	float: left;
+	margin-right:5%;
+	margin-left:5%;
+}
+
+
+/* banner */
+.banner{
+	width: 100%; 
+	background: red;
+}
+.banner .img{
+	width:100%;
+	height:50%;
+}
+
+
+
+/* 分类 */
+/* .fenlei{
+	background: #fff;
+	width:100%;
+	overflow: hidden;
+	padding:5px 10px;
+	box-sizing: border-box;
+}
+.fenlei .div{
+	width:20%;
+	float: left;
+}
+.fenlei .div .a2{
+	display: block;
+}
+.fenlei .div .img1{
+	width:60%;
+	height: 50%;
+	margin: 0 auto;
+}
+.fenlei .div .a1{
+	display: block;
+	font-size:10px;
+	color: #000;
+	text-align: center;
+}
+.fenlei .div .a1{
+	margin-top:5%;
+}
+.fenlei .div:nth-child(5)~.div{
+	margin-top:5%;
+} */
+.ym{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ym .tu{
+	width: 20%;
+	height: 100%;
+}
+.ym .tu .tu1{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 10% 12%;
+	box-sizing: border-box;
+}
+.ym .tu img{
+	width: 100%;
+}
+.ym .tu .tu1 span{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	font-family: 微软雅黑;
+	color: black;
+	padding-top: 10%;
+	box-sizing: border-box;
+}
+
+/* 热点 */
+.redian{
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+	padding:3% 0;
+	box-sizing: border-box;
+}
+.box{
+	width:20%;
+	border-right: 1px solid #ccc;
+	padding:0 2%;
+	box-sizing: border-box;
+	float: left;
+}
+.redian .img{
+	width: 100%;
+	height: 20%;
+}
+.redian .box2{
+	width: 10%;
+	float: left;
+	margin-left: 5%;
+}
+.redian .img2{
+	width: 80%;
+	margin-top:20%;
+}
+.redian .box3{
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+}
+.redian .box3 .span1{
+	display: block;
+	font-size: 12px;
+}
+.redian .box3 .span2{
+	display: block;
+	font-size: 12px;
+	color: red;
+	margin-top: 3%;
+}
+
+
+
+/* 图片 */
+.tupian1{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 2%;
+}
+.tupian1 .box1{
+	width:45%;
+	float: left;
+	margin-right: 10%;
+}
+.tupian1 .box1 .img{
+	width: 120%;
+}
+.tupian1 .box2{
+	width: 45%;
+	float: left;
+
+}
+.tupian1 .box2 .img2{
+	width: 120%;
+}
+
+
+/* 必抢 */
+.biqiang{
+	width: 100%;
+	overflow: hidden;
+	padding: 2% 0;
+	box-sizing: border-box;
+}
+.biqiang .title{
+	width: 100%;
+}
+.biqiang .span1{
+	display: block;
+	width: 10%;
+	float: left;
+	margin-left:30%;
+	color: red;
+}
+.biqiang .img{
+	display: block;
+	width: 5%;
+	float: left;
+}
+.biqiang .span2{
+	color: red;
+}
+.biqiang .span3{
+	color: red;
+}
+
+.biqiang .box{
+	width:100%;
+	background: #fff;
+	padding:4% 0;
+	box-sizing: border-box;
+}
+.biqiang .box1{
+	width:25%;
+	float: left;
+	float: left;
+	padding:0 2%;
+	box-sizing: border-box;
+}
+.biqiang .box1 .img1{
+	width:100%;
+	margin-bottom:5%;
+}
+.biqiang .span4{
+	display: block;
+	font-size: 12px;
+	text-align:center;
+	margin-bottom:5%;
+}
+.biqiang .span5{
+	display: block;
+	font-size: 12px;
+	color: red;
+	margin-left:10%;
+	margin-right: 10%;
+	float: left;
+}
+.biqiang .span6{
+	display: block;
+	font-size: 12px;
+}
+.biqiang .box1:nth-child(4){
+	margin-bottom: 5%;
+}
+/* 潮流酷玩 */
+.chaoliukuwan{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.chaoliukuwan .title2{
+	width: 100%;
+}
+.chaoliukuwan .title2 .span7{
+	display: block;
+	width: 10%;
+	float: left;
+	margin-left:30%;
+	color:#4A84E2;
+}
+.chaoliukuwan .title2 .img1{
+	display: block;
+	width: 4%;
+	float: left;
+	padding-right: 1%;
+}
+
+.chaoliukuwan .title2 .span8{
+	color: #4A84E2;
+}
+.chaoliukuwan .title2 .span9{
+	color:#4A84E2;
+}
+.shouji{
+	width: 100%;
+	padding-top: 5px;
+}
+.shouji .shouji1{
+	width: 33.3333%;
+	float: left;
+}
+.shouji .shouji1 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+.shouji .shouji2{
+	width: 33.3333%;
+	float: left;
+}
+.shouji .shouji3{
+	width: 33.3333%;
+	float: left;
+}
+.shouji .shouji2 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+.shouji .shouji3 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+/* 品牌特卖 */
+.pinpai{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.pinpai .title2{
+	width: 100%;
+}
+.pinpai .title2 .span7{
+	display: block;
+	width: 10%;
+	float: left;
+	margin-left:30%;
+	color:#F9AA5B;
+}
+.pinpai .title2 .img1{
+	display: block;
+	width: 4%;
+	float: left;
+	padding-right: 1%;
+}
+
+.pinpai .title2 .span8{
+	color: #F9AA5B;
+}
+.pinpai .title2 .span9{
+	color:#F9AA5B;
+}
+.pinpai{
+	width: 100%;
+	padding-top: 5px;
+}
+.pinpai .pinpai1{
+	width: 50%;
+	float: left;
+}
+.pinpai .pinpai1 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.pinpai .pinpai2{
+	width: 50%;
+	float: left;
+}
+.pinpai .pinpai2 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+
+/* 品牌资讯 */
+.zixun{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: 6px;
+}
+.zixun .title2{
+	width: 100%;
+}
+.zixun .title2 .span7{
+	display: block;
+	width: 10%;
+	float: left;
+	margin-left:30%;
+	color:#6CC3B8;
+}
+.zixun .title2 .img1{
+	display: block;
+	width: 4%;
+	float: left;
+	padding-right: 1%;
+}
+
+.zixun .title2 .span8{
+	color: #6CC3B8;
+}
+.zixun .title2 .span9{
+	color:#6CC3B8;
+}
+
+.zixuntu{
+	width: 100%;
+	padding-top: 5px;
+}
+.zixuntu .zixuntu1{
+	width: 33.33%;
+	float: left;
+}
+.zixuntu .zixuntu1 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+.zixuntu .zixuntu2{
+	width: 33.33%;
+	float: left;
+}
+.zixuntu .zixuntu2 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+.zixuntu .zixuntu3{
+	width: 33.33%;
+	float: left;
+}
+.zixuntu .zixuntu3 .img2{
+	width: 100%;
+	display: block;
+	float: left;
+}
+.zixuntu .datu{
+	width: 100%
+}
+.zixuntu .datu .datu1{
+	width: 100%;
+}
+
+/* 便捷生活 */
+.bianjie{
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-top: 6px;
+}
+.bianjie .title2{
+	width: 100%;
+}
+.bianjie .title2 .span7{
+	display: block;
+	width: 10%;
+	float: left;
+	margin-left:30%;
+	color:#75C71C;
+}
+.bianjie .title2 .img1{
+	display: block;
+	width: 4%;
+	float: left;
+	padding-right: 1%;
+}
+
+.bianjie .title2 .span8{
+	color: #75C71C;
+}
+.bianjie .title2 .span9{
+	color:#75C71C;
+}
+
+.bianjie{
+	width: 100%;
+	padding-top: 5px;
+}
+
+.bianjietu{
+	width: 100%;
+	padding-top: 5px;
+}
+.bianjietu .diyikuai{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.bianjietu .img2{
+	width: 120%;
+	display: block;
+	float: left;
+}
+.bianjietu .dierkuai{
+	width: 60%;
+	float: left;
+}
+.dierkuai .bianjietu2{
+	width: 100%;
+	height: 50%;
+}
+.bianjietu .dierkuai .bianjietu2 .img2{
+	width: 100%;
+	height: 50%;
+}
+.bianjietu .dierkuai .bianjietu3{
+	width: 100%;
+	height: 50%;
+}
+.bianjietu .dierkuai .bianjietu3 .img2{
+	width: 100%;
+	height: 50%;
+}
